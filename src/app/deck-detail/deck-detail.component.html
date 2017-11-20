@@ -1,0 +1,136 @@
+<section class="deck-detail">
+  <div class="card">
+    <div class="card-image">
+      <figure class="image is-2by1">
+        <img src="http://via.placeholder.com/640x320" alt="Deck Detail Image" />
+      </figure>
+    </div>
+
+    <div class="card-content">
+      <div class="columns is-mobile is-vcentered">
+        <div class="deck-detail__summary column is-three-quarters">
+          <h4 class="title is-4">Grixis Control</h4>
+          <div class="deck-detail__stat-line">
+            <ul class="deck-detail__colors">
+              <li>U</li>
+              <li>R</li>
+              <li>B</li>
+            </ul>
+            <span class="deck-detail__record">9W / 1L (90%)</span>
+          </div>
+        </div>
+
+        <div class="deck-detail__toggle-info-container column">
+          <a
+            class="deck-detail__toggle-info-button is-inline-block"
+            (click)="toggleInfo()"
+          >
+            <span [ngSwitch]="isInfoVisible" class="icon is-large">
+              <i *ngSwitchCase="false" class="deck-detail__toggle-info-icon fa fa-plus fa-3x"></i>
+              <i *ngSwitchCase="true" class="deck-detail__toggle-info-icon fa fa-minus fa-3x"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div *ngIf="isInfoVisible" class="deck-detail__info">
+        <div class="columns is-mobile">
+          <div class="column">
+            <h5 class="title is-5">Mainboard</h5>
+            <div class="columns is-mobile">
+              <div class="column is-size-7">
+                <ul>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                </ul>
+              </div>
+
+              <div class="column is-size-7">
+                <ul>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <h5 class="title is-5">Sideboard</h5>
+            <div class="columns is-mobile">
+              <div class="column is-size-7">
+                <ul>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                </ul>
+              </div>
+
+              <div class="column is-size-7">
+                <ul>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                  <li>
+                    4 Cruel Ultimatum
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <h5 class="title is-5"><a>Edit Deck</a></h5>
+            <figure class="image is-square">
+              <img src="http://via.placeholder.com/480x480" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

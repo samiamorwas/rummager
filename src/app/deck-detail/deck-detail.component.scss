@@ -1,0 +1,11 @@
+.deck-detail__colors {
+  display: inline-block;
+
+  & > li {
+    display: inline-block;
+  }
+}
+
+.deck-detail__toggle-info-container {
+  text-align: right;
+}

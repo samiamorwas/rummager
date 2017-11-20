@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { DeckDetailComponent } from './deck-detail/deck-detail.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DeckDetailComponent
   ],
   imports: [
     BrowserModule
